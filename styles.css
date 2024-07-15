@@ -1,0 +1,136 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.content h1 {
+    color: #ff0055;
+    font-size: 2.5rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+#contactButton {
+    background-color: #ff0055;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#contactButton:hover {
+    background-color: #e6004d;
+}
+
+.popup-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+.card-header {
+    background-color: #ff0055;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.btn-primary {
+    background-color: #ff0055;
+    border-color: #ff0055;
+}
+
+.btn-primary:hover {
+    background-color: #e6004d;
+    border-color: #e6004d;
+}
+
+#responseMessage {
+    text-align: center;
+}
+
+.slider {
+    margin-top: 20px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slide {
+    position: relative;
+}
+
+.hover-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.slide:hover .hover-content {
+    display: flex;
+}
+
+/* Custom dots (circles) styling */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #000; /* Customize the color as needed */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff0055; /* Customize the active dot color as needed */
+}
+
+/* Adjust dots position if needed */
+.slick-dots {
+    bottom: -30px; /* Adjust the position of the dots */
+}

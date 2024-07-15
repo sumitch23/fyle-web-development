@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .our-project-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .image-container {
+            margin-right: 50px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #e7e6e6;
+            cursor: pointer;
+        }
+
+        .content-item.active {
+            background-color: #bd1b1b;
+        }
+
+        .growth-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 50px 0;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 150px;
+            height: 210px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            color: #ff4757;
+            margin-bottom: 10px;
+        }
+
+        .card .number {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card .description {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .slick-dots li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .slick-dots li button {
+            font-size: 0;
+            background-color: black;
+            border-radius: 100%;
+        }
+
+        .slick-dots li.slick-active button{
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content">
+                    <h1>AWARD WINNING</h1>
+                    <h2>DIGITAL MARKETING AGENCY</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat at fermentum nibh. Pellentesque vitae ante at elit
+                        fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat at fermentum.</p>
+                    <button id="contactButton" class="btn btn-primary">CONTACT US</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="digital.png" alt="Digital Marketing" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- What We Do Section -->
+    <div class="container mt-5">
+        <h2 class="text-left" style="color: #bd1b1b;">What We Do</h2>
+        <h1 class="text-left">SERVICE PROVIDE <br>FOR YOU</h1>
+
+        <div class="slider">
+            <div class="slide">
+                <img src="img1.jpg" alt="Service 1" class="img-fluid" style="width: 500px; height: 400px;"
+                    data-design="design1.jpg">
+                <div class="hover-content">
+                    <p>WEB DEVELOPMENT 1</p>
+                    <button class="btn btn-primary read-more" onclick="window.open('https://fylehq.com', '_blank')">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img2.jpg" alt="Service 2" class="img-fluid" style="width: 500px; height: 400px;"
+                    data-design="design2.jpg">
+                <div class="hover-content">
+                    <p>WEB DEVELOPMENT 2</p>
+                    <button class="btn btn-primary read-more" onclick="window.open('https://fylehq.com', '_blank')">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img3.jpg" alt="Service 3" class="img-fluid" style="width: 500px; height: 400px;"
+                    data-design="design3.jpg">
+                <div class="hover-content">
+                    <p>WEB DEVELOPMENT 3</p>
+                    <button class="btn btn-primary read-more" onclick="window.open('https://fylehq.com', '_blank')">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img4.png" alt="Service 4" class="img-fluid" style="width: 500px; height: 400px;"
+                    data-design="design4.jpg">
+                <div class="hover-content">
+                    <p>WEB DEVELOPMENT 4</p>
+                    <button class="btn btn-primary read-more" onclick="window.open('https://fylehq.com', '_blank')">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img5.jpg" alt="Service 5" class="img-fluid" style="width: 500px; height: 400px;"
+                    data-design="design5.jpg">
+                <div class="hover-content">
+                    <p>WEB DEVELOPMENT 5</p>
+                    <button class="btn btn-primary read-more" onclick="window.open('https://fylehq.com', '_blank')">Read
+                        More</button>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+    </div>
+
+    <div id="popupForm" class="popup-form" style="display: none;">
+        <div class="form-container">
+            <div class="card-header">
+                Talk to us
+                <button type="button" class="close" id="closeButton">&times;</button>
+            </div>
+            <div class="card-body">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="email">Work email*</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First name*</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last name*</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="consent" name="consent" required>
+                        <label class="form-check-label" for="consent">I agree to the terms and conditions, and provide consent to send me communication.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Contact Us</button>
+                </form>
+                <div id="responseMessage" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Project Section -->
+    <h2 class="text-center">OUR PROJECT</h2>
+    <h1 class="text-center" style="color: #bd1b1b;">WHY WE ARE BEST</h1>
+    <div class="our-project-container">
+        <div class="image-container">
+            <img id="main-image" src="pro4.jpg" alt="Main Image" width="600" height="600">
+        </div>
+        <div class="content-container">
+            <div class="content-item" data-image="pro1.jpg">
+                <h3>Genderless Kei – Japan’s Hot</h3>
+                <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+            </div>
+            <div class="content-item" data-image="pro2.png">
+                <h3>Better Strategy & Quality</h3>
+                <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+            </div>
+            <div class="content-item" data-image="pro3.jpg">
+                <h3>Genderless Kei – Japan’s Hot</h3>
+                <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Company Growth Section -->
+    <h2 class="text-center" style="color: #bd1b1b; margin-top: 150px;">EXPERTS GROWTS</h2>
+    <h1 class="text-center">OUR COMPANY GROWTH</h1>
+    <div class="growth-container">
+        <div class="card">
+            <div class="icon">❤</div>
+            <div class="number">199+</div>
+            <div class="description">Satisfied Customers</div>
+        </div>
+        <div class="card">
+            <div class="icon">🕒</div>
+            <div class="number">1591+</div>
+            <div class="description">Days Of Operation</div>
+        </div>
+        <div class="card">
+            <div class="icon">✔</div>
+            <div class="number">283+</div>
+            <div class="description">Complete Projects</div>
+        </div>
+        <div class="card">
+            <div class="icon">🏆</div>
+            <div class="number">75+</div>
+            <div class="description">Win Awards</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: false,
+                arrows: false,
+                dots: true,
+            });
+
+            const contentItems = document.querySelectorAll('.content-item');
+            const mainImage = document.getElementById('main-image');
+
+            contentItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    contentItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                    const newImageSrc = this.getAttribute('data-image');
+                    mainImage.src = newImageSrc;
+                });
+            });
+
+            $('#contactButton').on('click', function () {
+                $('#popupForm').show();
+            });
+
+            $('#closeButton').on('click', function () {
+                $('#popupForm').hide();
+            });
+
+            $('#contactForm').on('submit', function (event) {
+                event.preventDefault();
+                $('#responseMessage').text('Thank you for contacting us!');
+                $('#popupForm').hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
